@@ -1,0 +1,94 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #2d5a2d 0%, #4d804a 100%);
+  position: relative; 
+}
+
+#logo {
+  color: #ffffff;
+  font-size: x-large;
+  font-weight: bold;
+  position: absolute; 
+  top: 16px; 
+  left: 16px; 
+  padding: 0; 
+  z-index: 10; 
+}
+
+
+.login-card {
+  width: min(90vw, 420px);
+  background-color: #558952;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.login-card h3 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 2.25rem;
+  font-weight: 600;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #4d804a;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.95rem 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 12px 30px rgba(77, 128, 74, 0.35);
+}
+
+.login-btn:hover {
+  background-color: #3d6a3a;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 35px rgba(77, 128, 74, 0.45);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+}
+
+.terms-copy {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #6b6b6b;
+}
+
+.terms-copy a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.terms-copy a:hover {
+  color: #0f1d22;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,18 @@
+.map-wrapper {
+  display: flex;
+  height: 75vh;
+  width: 75%;
+  align-items: flex-start;
+  margin-right: auto;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 10px;
+  border: 2px solid #6d876a; 
+  overflow: hidden;
+}

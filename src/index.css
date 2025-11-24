@@ -1,0 +1,33 @@
+:root {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #0f1d22;
+  background-color: #f4f5f7;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f4f5f7;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font: inherit;
+}

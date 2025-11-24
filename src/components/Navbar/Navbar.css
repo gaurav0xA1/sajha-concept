@@ -1,0 +1,147 @@
+.nav-bar {
+  width: 100%;
+  background-color: #366033;
+  border-radius: 0 0 24px 24px;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Logo left, profile right */
+  position: fixed; /* Stick to top */
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+#text-logo-link {
+  display: inline-block;       /* So it behaves like a block but only as wide as content */
+  text-decoration: none;       /* Remove underline */
+  cursor: pointer;             /* Show pointer on hover */
+}
+
+
+#text-logo {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.user-profile-wrapper {
+  position: relative;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.user-profile:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.user-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4d804a;
+  box-shadow: 0 4px 10px rgba(77, 128, 74, 0.2);
+}
+
+.welcome-line {
+  color: #ffffff;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.user-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* POPUP STYLES */
+.profile-popup {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  min-width: 280px;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.popup-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4d804a;
+}
+
+.popup-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1b1b1b;
+  margin: 0;
+}
+
+.popup-email {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  margin-top: 0.25rem;
+}
+
+.signout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #ff5f56;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.signout-btn:hover {
+  background: #e64b44;
+  transform: translateY(-1px);
+}
+
+.signout-btn:active {
+  transform: translateY(0);
+}

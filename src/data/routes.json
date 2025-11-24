@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Sajha (Lagankhel - Naya Buspark)",
+    "mainName": "Lagankhel - Naya Buspark",
+    "busCount": 2,
+    "stopCount": 23,
+    "distanceKm": 13.82
+  },
+  {
+    "id": 2,
+    "title": "Sajha (Godawari - Ratnapark)",
+    "mainName": "Godawari - Ratnapark",
+    "busCount": 3,
+    "stopCount": 20,
+    "distanceKm": 15.91
+  },
+  {
+    "id": 3,
+    "title": "Sajha (Jamal - Bungamati)",
+    "mainName": "Jamal - Bungamati",
+    "busCount": 2,
+    "stopCount": 23,
+    "distanceKm": 12.97
+  },
+  {
+    "id": 4,
+    "title": "Sajha (Jamal - Lele)",
+    "mainName": "Jamal - Lele",
+    "busCount": 5,
+    "stopCount": 27,
+    "distanceKm": 21.24
+  },
+  {
+    "id": 4,
+    "title": "Sajha (Jamal - Lele)",
+    "mainName": "Jamal - Lele",
+    "busCount": 5,
+    "stopCount": 27,
+    "distanceKm": 21.24
+  },
+  {
+    "id": 4,
+    "title": "Sajha (Jamal - Lele)",
+    "mainName": "Jamal - Lele",
+    "busCount": 5,
+    "stopCount": 27,
+    "distanceKm": 21.24
+  }
+  
+]

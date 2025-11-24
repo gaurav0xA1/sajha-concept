@@ -1,0 +1,98 @@
+/* OUTER LIST WRAPPER */
+.route-list {
+  width: 30%;
+  height: 75vh;
+
+  margin: 10px;
+  padding: 10px 0;
+  box-sizing: border-box;
+
+  background: #f2f6ec;
+  border: 2px solid #d8decf;
+  border-radius: 20px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  /* smooth scrolling + iOS bounce */
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+
+  /* hide scrollbar on Firefox */
+  scrollbar-width: none;
+}
+
+/* hide scrollbar on Chrome/Safari/Edge */
+.route-list::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* CARD CONTAINER */
+.cards-container {
+  width: 100%;
+  padding: 10px 16px;
+  box-sizing: border-box;
+}
+
+/* INDIVIDUAL CARD */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* subtle hover for web */
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* TOP TITLE (green small heading) */
+.route-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2F5F2F; /* deep green */
+  margin: 0;
+}
+
+/* MAIN ROW (icon + route name) */
+.route-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.route-main h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+
+/* META INFO ROW (bottom of card) */
+.route-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  padding-top: 6px;
+  border-top: 1px solid #eaeaea; /* that grey divider like screenshot */
+}
+
+.route-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #555;
+}
