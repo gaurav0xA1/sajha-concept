@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://gaurav0xA1.github.io/sajha-concept",
+  "homepage": "https://yourusername.github.io/sajha-concept",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
