@@ -32,7 +32,7 @@ function App() {
   if (loading) return <p className="loading-message">Loading...</p>;
 
   return (
-    <BrowserRouter basename="/sajha-concept">
+    <BrowserRouter basename="/sajha-concept/">
       <Routes>
         <Route 
           path="/" 
