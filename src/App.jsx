@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
 import { auth, googleProvider } from "./firebase/firebase";
 import { useState, useEffect } from "react";
@@ -32,7 +32,7 @@ function App() {
   if (loading) return <p className="loading-message">Loading...</p>;
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route 
           path="/" 
@@ -44,7 +44,7 @@ function App() {
           element={user ? <Navigate to="/" /> : <Login onLogin={handleGoogleLogin} />} 
         />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
