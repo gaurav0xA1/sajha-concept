@@ -29,7 +29,19 @@ function App() {
     signOut(auth);
   };
 
-  if (loading) return <p className="loading-message">Loading...</p>;
+  if (loading) return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+      fontSize: '1.5rem',
+      background: 'linear-gradient(135deg, #366033 0%, #4d804a 100%)',
+      color: 'white'
+    }}>
+      Loading...
+    </div>
+  );
 
   return (
     <BrowserRouter>
