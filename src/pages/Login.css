@@ -4,60 +4,77 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #2d5a2d 0%, #4d804a 100%);
+  background: linear-gradient(135deg, #2d5a2d 0%, #3d6a3b 100%);
   position: relative; 
 }
 
-#logo {
+.logo {
   color: #ffffff;
-  font-size: x-large;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 700;
   position: absolute; 
-  top: 16px; 
-  left: 16px; 
+  top: 2rem; 
+  left: 2rem; 
   padding: 0; 
-  z-index: 10; 
+  z-index: 10;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .login-card {
-  width: min(90vw, 420px);
-  background-color: #558952;
-  border-radius: 20px;
+  width: min(90vw, 480px);
+  background: rgba(88, 137, 82, 0.6);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
   padding: 3rem 2.5rem;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   text-align: center;
-  animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.6s ease-in;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bus-illustration {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 2.5rem;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+.bus-illustration svg {
+  width: 100%;
+  height: auto;
 }
 
 .login-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: #ffffff;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2rem;
   font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .login-btn {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
   width: 100%;
   border: none;
-  border-radius: 10px;
-  background-color: #4d804a;
+  border-radius: 12px;
+  background-color: rgba(77, 128, 74, 0.9);
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
-  padding: 0.95rem 1rem;
+  padding: 1rem 1.5rem;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  box-shadow: 0 12px 30px rgba(77, 128, 74, 0.35);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .login-btn:hover {
-  background-color: #3d6a3a;
+  background-color: rgba(61, 106, 58, 1);
   transform: translateY(-2px);
-  box-shadow: 0 16px 35px rgba(77, 128, 74, 0.45);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
 }
 
 .login-btn:active {
@@ -66,29 +83,46 @@
 
 .terms-copy {
   margin-top: 2rem;
-  font-size: 0.85rem;
-  color: #6b6b6b;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .terms-copy a {
   color: #ffffff;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline;
   transition: color 0.2s ease;
 }
 
 .terms-copy a:hover {
-  color: #0f1d22;
-  text-decoration: underline;
+  color: #FDBE34;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-16px);
+    transform: translateY(-20px) scale(0.95);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+  
+  .login-card {
+    padding: 2.5rem 2rem;
+  }
+  
+  .bus-illustration {
+    max-width: 220px;
+    margin-bottom: 2rem;
   }
 }

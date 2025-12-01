@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "name": "Kalanki",
+    "lat": 27.6880,
+    "lng": 85.2894
+  },
+  {
+    "id": 2,
+    "name": "Balaju_Bypass",
+    "lat": 27.7195,
+    "lng": 85.2898
+  },
+  {
+    "id": 3,
+    "name": "Balaju_Chowk",
+    "lat": 27.7290,
+    "lng": 85.3047
+  },
+  {
+    "id": 4,
+    "name": "Gongabu",
+    "lat": 27.7320,
+    "lng": 85.3245
+  },
+  {
+    "id": 5,
+    "name": "Chabahil",
+    "lat": 27.7258,
+    "lng": 85.3399
+  },
+  {
+    "id": 6,
+    "name": "Satdobato",
+    "lat": 27.6683,
+    "lng": 85.3224
+  },
+  {
+    "id": 7,
+    "name": "Balkhu",
+    "lat": 27.6847,
+    "lng": 85.2975
+  },
+  {
+    "id": 8,
+    "name": "Thapathali",
+    "lat": 27.7020,
+    "lng": 85.3140
+  },
+  {
+    "id": 9,
+    "name": "Lazimpat",
+    "lat": 27.7140,
+    "lng": 85.3120
+  },
+  {
+    "id": 10,
+    "name": "Jawlakhel",
+    "lat": 27.6750,
+    "lng": 85.3120
+  },
+  {
+    "id": 11,
+    "name": "Basundhara Chowk / RingRoad Basundhara",
+    "lat": 27.7420,
+    "lng": 85.3334
+  },
+  {
+    "id": 12,
+    "name": "Sitapaila Chowk / RingRoad Sitapaila",
+    "lat": 27.7077,
+    "lng": 85.2825
+  },
+  {
+    "id": 13,
+    "name": "Chapagaun / Satdobato-Chapagaun area",
+    "lat": 27.6555,
+    "lng": 85.3190
+  },
+  {
+    "id": 14,
+    "name": "Ekantakuna / RingRoad Ekantakuna",
+    "lat": 27.6681,
+    "lng": 85.3094
+  },
+  {
+    "id": 15,
+    "name": "Koteshwor Chowk",
+    "lat": 27.6786,
+    "lng": 85.3494
+  },
+  {
+    "id": 16,
+    "name": "Sinamangal / RingRoad Sinamangal",
+    "lat": 27.6953,
+    "lng": 85.3549
+  },
+  {
+    "id": 17,
+    "name": "Thapathali Chowk",
+    "lat": 27.6916,
+    "lng": 85.32015
+  },
+  {
+    "id": 18,
+    "name": "Chabahil / RingRoad Chabahil",
+    "lat": 27.7170,
+    "lng": 85.3466
+  },
+  {
+    "id": 20,
+    "name": "Gwarko Chowk / RingRoad Gwarko",
+    "lat": 27.6660,
+    "lng": 85.3350
+  }
+]

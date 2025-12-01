@@ -1,18 +1,89 @@
 .map-wrapper {
   display: flex;
-  height: 75vh;
-  width: 75%;
+  height: calc(100vh - 200px);  /* Full height minus navbar and bottom-bar */
+  flex: 1;
+  max-width: 65%;
   align-items: flex-start;
-  margin-right: auto;
+}
+
+/* Hide map on mobile */
+@media (max-width: 768px) {
+  .map-wrapper {
+    display: none;
+  }
 }
 
 .map-container {
   height: 100%;
   width: 100%;
-  padding: 10px 16px;
   border-radius: 20px;
   box-sizing: border-box;
-  border: 10px;
   border: 2px solid #6d876a; 
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide routing control container */
+.leaflet-routing-container {
+  display: none !important;
+}
+
+/* Ensure markers are clickable */
+.leaflet-marker-icon {
+  z-index: 600 !important;
+}
+
+.leaflet-popup {
+  z-index: 700 !important;
+}
+
+/* Custom station marker */
+.custom-station-icon {
+  background: none;
+  border: none;
+}
+
+.station-marker {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  transition: transform 0.2s;
+}
+
+.station-marker:hover {
+  transform: scale(1.1);
+}
+
+.station-marker.highlighted {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.station-marker.search-match {
+  animation: searchPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+@keyframes searchPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 2px 4px rgba(76, 175, 80, 0.4));
+  }
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 12px rgba(76, 175, 80, 0.8));
+  }
 }

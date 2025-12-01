@@ -5,7 +5,8 @@
     "mainName": "Lagankhel - Naya Buspark",
     "busCount": 2,
     "stopCount": 23,
-    "distanceKm": 13.82
+    "distanceKm": 13.82,
+    "stationIds": [10, 14, 6, 20, 15, 5, 18, 4, 3, 2]
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "mainName": "Godawari - Ratnapark",
     "busCount": 3,
     "stopCount": 20,
-    "distanceKm": 15.91
+    "distanceKm": 15.91,
+    "stationIds": [13, 6, 10, 14, 7, 17, 8, 9]
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "mainName": "Jamal - Bungamati",
     "busCount": 2,
     "stopCount": 23,
-    "distanceKm": 12.97
+    "distanceKm": 12.97,
+    "stationIds": [9, 8, 17, 7, 1, 12, 14, 6, 13]
   },
   {
     "id": 4,
@@ -29,23 +32,7 @@
     "mainName": "Jamal - Lele",
     "busCount": 5,
     "stopCount": 27,
-    "distanceKm": 21.24
-  },
-  {
-    "id": 4,
-    "title": "Sajha (Jamal - Lele)",
-    "mainName": "Jamal - Lele",
-    "busCount": 5,
-    "stopCount": 27,
-    "distanceKm": 21.24
-  },
-  {
-    "id": 4,
-    "title": "Sajha (Jamal - Lele)",
-    "mainName": "Jamal - Lele",
-    "busCount": 5,
-    "stopCount": 27,
-    "distanceKm": 21.24
+    "distanceKm": 21.24,
+    "stationIds": [9, 8, 17, 10, 20, 6, 13]
   }
-  
 ]
