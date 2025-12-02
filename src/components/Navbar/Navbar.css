@@ -12,6 +12,52 @@
   left: 0;
   z-index: 100;
 }
+
+/* Mobile navbar */
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 0.75rem 1rem;
+    border-radius: 0 0 16px 16px;
+  }
+  
+  #text-logo {
+    font-size: 1.4rem;
+  }
+  
+  .user-profile {
+    gap: 0.75rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .user-profile img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #4d804a;
+  }
+  
+  .welcome-line {
+    font-size: 0.75rem;
+  }
+  
+  .user-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .nav-bar {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  #text-logo {
+    font-size: 1.3rem;
+  }
+  
+  .user-profile img {
+    width: 36px;
+    height: 36px;
+  }
+}
 #text-logo-link {
   display: inline-block;       /* So it behaves like a block but only as wide as content */
   text-decoration: none;       /* Remove underline */

@@ -14,10 +14,22 @@
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .home-page {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 90px;
-    padding-bottom: 60px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 85px;
+    padding-bottom: 75px;
+    gap: 0.75rem;
+    flex-direction: column;
+  }
+}
+
+/* iPhone XS and similar devices */
+@media (max-width: 414px) {
+  .home-page {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 80px;
+    padding-bottom: 70px;
   }
 }
 
