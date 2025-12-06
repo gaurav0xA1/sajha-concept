@@ -2,7 +2,7 @@ import './DrawerMenu.css'
 import { useState } from 'react'
 import { IoMenu, IoClose, IoHome, IoMap, IoBus, IoPersonCircle, IoSearch, IoInformationCircle } from 'react-icons/io5'
 
-function DrawerMenu({ user, onSignOut, searchQuery, onSearchChange, showProfilePopup, setShowProfilePopup }) {
+function DrawerMenu({ user, onSignOut, searchQuery, onSearchChange, showProfilePopup, setShowProfilePopup, isRouteViewOpen }) {
     const [isOpen, setIsOpen] = useState(false)
 
     if (!user) return null
@@ -24,7 +24,7 @@ function DrawerMenu({ user, onSignOut, searchQuery, onSearchChange, showProfileP
     return (
         <>
             {/* Bottom Bar */}
-            <div className="bottom-bar">
+            <div className={`bottom-bar ${isRouteViewOpen ? 'slide-down' : ''}`}>
                 {/* Search Box */}
                 <div className="search-wrapper">
                     <IoSearch className="search-icon" size={20} />

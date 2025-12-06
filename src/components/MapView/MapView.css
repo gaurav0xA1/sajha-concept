@@ -1,25 +1,21 @@
 .map-wrapper {
   display: flex;
-  height: calc(100vh - 200px);  /* Full height minus navbar and bottom-bar */
+  height: calc(100vh - 190px);  /* Full height minus navbar and bottom-bar */
   flex: 1;
   max-width: 65%;
   align-items: flex-start;
+  transition: height 0.3s ease, max-width 0.3s ease;
 }
 
-/* Show map on mobile in column layout */
+.map-wrapper.expanded {
+  height: calc(100vh - 130px);  /* Full height minus navbar with padding */
+  max-width: 72%;
+}
+
+/* Hide map on mobile */
 @media (max-width: 768px) {
   .map-wrapper {
-    max-width: 100%;
-    height: 45vh;
-    min-height: 300px;
-  }
-}
-
-/* iPhone XS specific */
-@media (max-width: 414px) {
-  .map-wrapper {
-    height: 40vh;
-    min-height: 280px;
+    display: none;
   }
 }
 

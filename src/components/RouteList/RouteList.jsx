@@ -11,7 +11,7 @@ import { WiHumidity } from "react-icons/wi";             // humidity
 import { FiWind } from "react-icons/fi";                 // wind speed
 import { MdCompress } from "react-icons/md";             // pressure
 
-function RouteList({ onRouteClick, selectedRoute, searchQuery }) {
+function RouteList({ onRouteClick, onRouteViewClick, selectedRoute, searchQuery }) {
     const [weather, setWeather] = useState(null);
 
     useEffect(() => {
@@ -58,6 +58,10 @@ function RouteList({ onRouteClick, selectedRoute, searchQuery }) {
                         key={route.id}
                         onMouseEnter={() => onRouteClick(route)}
                         onMouseLeave={() => onRouteClick(null)}
+                        onClick={(e) => {
+                            e.stopPropagation()
+                            onRouteViewClick(route)
+                        }}
                     >
 
                         {/* TITLE (small green text) */}

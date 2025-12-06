@@ -6,7 +6,7 @@ import "leaflet/dist/leaflet.css";
 import stationsData from '../../data/stations.json';
 import RoutingMachine from './RoutingMachine';
 
-function MapView({ selectedRoute, searchQuery }) {
+function MapView({ selectedRoute, searchQuery, isRouteViewOpen }) {
   const [map, setMap] = useState(null);
 
   // Always show all stations
@@ -95,7 +95,7 @@ function MapView({ selectedRoute, searchQuery }) {
   });
 
   return (
-    <div className="map-wrapper">
+    <div className={`map-wrapper ${isRouteViewOpen ? 'expanded' : ''}`}>
       <MapContainer
         center={[27.6950, 85.3240]}
         zoom={13}
